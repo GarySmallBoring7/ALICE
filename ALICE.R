@@ -186,7 +186,7 @@ make_rda_folder<-function(DTlist,folder="",prefix="",VJDT=VDJT,Read_thres=1,Read
 }
 
 compute_pgen_rda_folder<-function(folder,prefix="",iter=50,cores=8,nrec=5e5,silent=T){
-  fnames<-list.files(folder,,full.names = T)
+  fnames<-list.files(folder,full.names = T)
   fnames_s<-list.files(folder,full.names = F)
   fnames<-grep(pattern = "res_",fnames,invert = T,value = T)
   fnames_s<-grep(pattern = "res_",fnames_s,invert = T,value = T)
